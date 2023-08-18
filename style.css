@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700&display=swap');
+
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #e8f4ff;
+    overflow: hidden;
+    color: #333;
+}
+
+body::before, body::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    filter: blur(100px);
+}
+
+body::before {
+    background-color: #b2e0fa;
+    left: 25%;
+    top: 10%;
+}
+
+body::after {
+    background-color: #82c9f8;
+    left: 70%;
+    top: 70%;
+}
+
+.container {
+    width: 26rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.container form input {
+    height: 45px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 0 20px;
+    background: transparent;
+    border: 2px solid #d1d1d1;
+    transition: all 0.4s ease;
+}
+
+.container form input:hover, .container form input:focus {
+    border: 2px solid #59a1d2;
+}
+
+.container .convert-box {
+    margin-top: 30px;
+}
+
+.container .convert-box .from{
+    width: 100%;
+}
+
+.container .convert-box .to {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.container .convert-box .select-input {
+    display: flex;
+    width: 100%;
+    border: 2px solid #d1d1d1;
+    height: 45px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0 20px;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+
+.container .convert-box .select-input:hover, .container .convert-box .select-input:focus {
+    border: 2px solid #59a1d2;
+}
+
+.container .convert-box .select-input img {
+    max-width: 24px;
+    margin-right: 10px;
+}
+
+.container .convert-box .select-input select {
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    background: none;
+    color: #333;
+}
+
+.container .convert-box .select-input select option {
+    color: #333;
+}
+
+.container form .result {
+    font-size: 1.2rem;
+    margin: 30px 0;
+    color: #777;
+}
+
+.container form button {
+    width: 100%;
+    height: 48px;
+    color: #fff;
+    background-color: #59a1d2;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.container form button:hover {
+    background: #3f88b5;
+}
